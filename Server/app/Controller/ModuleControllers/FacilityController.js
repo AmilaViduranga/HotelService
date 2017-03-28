@@ -28,7 +28,7 @@ function FacilityController() {
 	}
 
 	/*
-	 * update hotel
+	 * update Facility
 	 */
 	this.updateFacility = function(facilityInstance, res) {
 		if(facilityInstance.imageFile) {
@@ -77,7 +77,7 @@ function FacilityController() {
 	}
 
 	/*
-	 * delete hotel
+	 * delete Facility
 	 */
 	this.deleteFacility = function(facilityId, res) {
 		Facilities.find({
@@ -96,7 +96,7 @@ function FacilityController() {
 	}
 
 	/*
-	 * get all hotel details
+	 * get all Facility details
 	 */ 
 	this.getAllFacilities = function(res) {
 		Facilities.findAll().then(function(data) {
@@ -107,7 +107,7 @@ function FacilityController() {
 	}
 
 	/*
-	 * get hotel by id
+	 * get Facility by id
 	 */ 
 	this.getSingleFacility = function(facilityId, res) {
 		Facilities.find({
@@ -129,7 +129,7 @@ function FacilityController() {
 	}
 
 	/*
-	 * get hotel image
+	 * get Facility image
 	 */
 	this.getFacilityImage = function(facilityId, res) {
 		Facilities.find({
